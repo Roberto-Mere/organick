@@ -19,3 +19,26 @@
   gap: 3rem;
   margin: 9.6rem 4rem;
 }
+
+.about-us {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  background-color: $color-gray-1;
+  padding: 8rem 4rem;
+
+  &__image {
+    width: 50%;
+    height: auto;
+  }
+
+  &__content {
+    .body-1 {
+      margin-top: 2.4rem;
+    }
+  }
+
+  &__features {
+    margin: 5.6rem 0;
+  }
+}
