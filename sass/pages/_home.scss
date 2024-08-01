@@ -9,7 +9,13 @@
   background-size: cover;
 
   &__content {
-    width: 50rem;
+    max-width: 50rem;
     margin-left: 4rem;
   }
+}
+
+.offers {
+  display: flex;
+  gap: 3rem;
+  margin: 9.6rem 4rem;
 }
