@@ -14,11 +14,16 @@
   &__icon {
     width: 3.5rem;
     height: 1.2rem;
-    stroke: $color-body;
+    stroke: currentColor;
     margin-left: 2.4rem;
   }
 
   &--primary {
     background-color: $color-secondary;
+  }
+
+  &--body {
+    background-color: $color-body;
+    color: $color-white;
   }
 }
