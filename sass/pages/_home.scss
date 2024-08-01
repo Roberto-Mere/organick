@@ -1,0 +1,15 @@
+.hero {
+  display: grid;
+  justify-content: start;
+  align-content: center;
+
+  height: 75vh;
+
+  background-image: url("../assets/img/hero-background.jpg");
+  background-size: cover;
+
+  &__content {
+    width: 50rem;
+    margin-left: 4rem;
+  }
+}
