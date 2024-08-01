@@ -12,10 +12,35 @@
     max-width: 50rem;
     margin-left: 4rem;
   }
+
+  &__heading {
+    margin-bottom: 3.6rem;
+  }
 }
 
 .offers {
   display: flex;
   gap: 3rem;
   margin: 9.6rem 4rem;
+}
+
+.about-us {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  background-color: $color-gray-1;
+  padding: 8rem 4rem;
+
+  &__image {
+    width: 50%;
+    height: auto;
+  }
+
+  &__heading {
+    margin-bottom: 2.4rem;
+  }
+
+  &__features {
+    margin: 5.6rem 0;
+  }
 }

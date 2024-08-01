@@ -1,3 +1,5 @@
+// General
+
 body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
@@ -5,10 +7,25 @@ body {
   color: $color-body;
 }
 
+// Body
+
+.body-1 {
+  font-size: 1.8rem;
+  line-height: 3.2rem;
+}
+
+// Heading
+
 .heading-primary {
   font-weight: 700;
   font-size: 7rem;
   line-height: 8.4rem;
+}
+
+.heading-secondary {
+  font-weight: 700;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
 }
 
 .heading-tertiary {
@@ -21,6 +38,8 @@ body {
   }
 }
 
+// Display
+
 .display {
   font-family: YellowTail, sans-serif;
   font-size: 3.6rem;
@@ -28,10 +47,16 @@ body {
   text-transform: capitalize;
 
   &--primary {
-    color: $color-secondary;
+    color: $color-primary;
   }
 
   &--white {
     color: $color-white;
   }
+}
+
+// Subtitle
+
+.subtitle-2 {
+  font-size: 2.4rem;
 }
