@@ -28,6 +28,10 @@ body {
   text-transform: capitalize;
 
   &--primary {
-    color: #7eb693;
+    color: $color-secondary;
+  }
+
+  &--white {
+    color: $color-white;
   }
 }
