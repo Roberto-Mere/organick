@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto&family=Yellowtail&display=swap"
       rel="stylesheet"
     />
     <title>Organick</title>
@@ -14,7 +14,11 @@
   <body>
     <header class="header">
       <a href="#"
-        ><img src="img/logo.svg" alt="Organick logo" class="header__logo" />
+        ><img
+          src="assets/svg/logo.svg"
+          alt="Organick logo"
+          class="header__logo"
+        />
       </a>
       <div class="header__menu">
         <ul class="header__list">
@@ -36,5 +40,20 @@
         </ul>
       </div>
     </header>
+
+    <section class="hero">
+      <div class="hero__content">
+        <h2 class="display display--primary">Made with nature</h2>
+        <h1 class="heading-primary">
+          Welcome to the world of nature and organic.
+        </h1>
+        <button class="btn btn--primary">
+          <span class="btn__text">Explore Now</span>
+          <svg class="btn__icon">
+            <use href="assets/svg/right-arrow.svg#right-arrow"></use>
+          </svg>
+        </button>
+      </div>
+    </section>
   </body>
 </html>
