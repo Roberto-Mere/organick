@@ -1,0 +1,23 @@
+.feature {
+  display: flex;
+  gap: 2rem;
+
+  &__icon {
+    box-sizing: content-box;
+    height: 4.8rem;
+    height: 4.8rem;
+    padding: 2.4rem;
+    background-color: $color-white;
+    border-radius: 2rem;
+  }
+
+  &__text {
+    .subtitle-2 {
+      margin-bottom: 1.2rem;
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+}
