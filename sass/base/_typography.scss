@@ -11,6 +11,16 @@ body {
   line-height: 8.4rem;
 }
 
+.heading-tertiary {
+  font-weight: 400;
+  font-size: 4rem;
+  line-height: 4.8rem;
+
+  &--white {
+    color: $color-white;
+  }
+}
+
 .display {
   font-family: YellowTail, sans-serif;
   font-size: 3.6rem;
