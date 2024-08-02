@@ -4,6 +4,7 @@ body {
   font-family: Roboto, sans-serif;
   font-weight: 400;
   line-height: 3.2rem;
+  letter-spacing: 0.36px;
   color: $color-body;
 }
 
@@ -11,7 +12,6 @@ body {
 
 .body-1 {
   font-size: 1.8rem;
-  line-height: 3.2rem;
 }
 
 .body-3 {
@@ -70,13 +70,20 @@ body {
   font-size: 2.4rem;
 }
 
+.subtitle-4 {
+  font-size: 2.6rem;
+  font-weight: 700;
+}
+
 // Label
 
-.label {
-  &-2 {
-    color: $color-white;
-    font-size: 1.6rem;
-    font-weight: 700;
-    line-height: 2.4rem;
-  }
+.label-1 {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+}
+
+.label-2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 2.4rem;
 }
