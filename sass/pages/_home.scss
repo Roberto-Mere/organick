@@ -52,11 +52,8 @@
   padding: 9.6rem 4rem;
 
   &__cards {
+    @include cardsGridDisplay;
     width: 100%;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: repeat(auto-fit, 43.2rem);
-    gap: 3.2rem;
     margin-top: 4rem;
   }
 }
