@@ -104,3 +104,13 @@ body {
   font-weight: 700;
   line-height: 2.4rem;
 }
+
+// Links
+
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
