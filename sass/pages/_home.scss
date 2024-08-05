@@ -132,7 +132,7 @@
 
 .eco-friendly {
   display: grid;
-  grid-template-columns: [img-start] calc(57vw - 13.2rem) [content-start] 13.2rem [img-end] 1fr [content-end];
+  grid-template-columns: [img-start] calc(57vw - 13.3rem) [content-start] 13.3rem [img-end] 1fr [content-end];
 
   &__image {
     grid-column: img-start / img-end;
