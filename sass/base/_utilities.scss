@@ -1,0 +1,13 @@
+.u-cards-grid-display {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fit, 43.2rem);
+  gap: 3.2rem;
+}
+
+.u-section-flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-wrap: wrap;
+}

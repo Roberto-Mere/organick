@@ -48,7 +48,7 @@
           Welcome to the world of nature and organic.
         </h1>
         <button class="btn btn--primary">
-          <span class="btn__text">Explore Now</span>
+          <span class="body-2">Explore Now</span>
           <svg class="btn__icon">
             <use href="assets/svg/right-arrow.svg#right-arrow"></use>
           </svg>
@@ -125,7 +125,7 @@
           </div>
 
           <button class="btn btn--body">
-            <span class="btn__text">Shop Now</span>
+            <span class="body-2">Shop Now</span>
             <svg class="btn__icon">
               <use href="assets/svg/right-arrow.svg#right-arrow"></use>
             </svg>
@@ -137,7 +137,7 @@
         <p class="display display--primary">Organic</p>
         <h2 class="heading-secondary">Our Products</h2>
 
-        <div class="products__cards">
+        <div class="products__cards u-cards-grid-display">
           <div class="card">
             <p class="card__label label-2">Vegetable</p>
             <img
@@ -449,23 +449,26 @@
       </section>
 
       <section class="offer-products">
-        <p class="offer-products__display display display--primary">
-          Offer Products
-        </p>
-        <h2
-          class="offer-products__heading heading-secondary heading-secondary--white"
-        >
-          We Offer Organic for You
-        </h2>
+        <div class="u-section-flex-header">
+          <div class="offer-products__title">
+            <p class="offer-products__display display display--primary">
+              Offer Products
+            </p>
+            <h2
+              class="offer-products__heading heading-secondary heading-secondary--white"
+            >
+              We Offer Organic for You
+            </h2>
+          </div>
+          <button class="offer-products__button btn btn--primary">
+            <span class="body-2">View All Products</span>
+            <svg class="btn__icon">
+              <use href="assets/svg/right-arrow.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
 
-        <button class="offer-products__button btn btn--primary">
-          <span class="btn__text">View All Products</span>
-          <svg class="btn__icon">
-            <use href="assets/svg/right-arrow.svg#right-arrow"></use>
-          </svg>
-        </button>
-
-        <div class="offer-products__cards">
+        <div class="offer-products__cards u-cards-grid-display">
           <div class="card">
             <p class="card__label label-2">Vegetable</p>
             <img
@@ -637,7 +640,7 @@
         </div>
       </section>
 
-      <section class="offer-cards">
+      <section class="offer-cards u-cards-grid-display">
         <div class="offer-card offer-card-1">
           <a href="#" class="offer-card__link link subtitle-3">Fruit Juice</a>
         </div>
@@ -648,6 +651,85 @@
 
         <div class="offer-card offer-card-3">
           <a href="#" class="offer-card__link link subtitle-3">Nuts Cookies</a>
+        </div>
+      </section>
+
+      <section class="news">
+        <div class="news__header u-section-flex-header">
+          <div class="news__title">
+            <p class="display display--primary">News</p>
+            <h2 class="news__heading heading-secondary">
+              Discover content about organic products
+            </h2>
+          </div>
+          <button class="btn btn--white">
+            <span class="body-2">More News</span>
+            <svg class="btn__icon">
+              <use href="assets/svg/right-arrow.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="news__cards">
+          <div class="news-card news-card-1">
+            <div class="news-card__date">
+              <h4 class="heading-quaternary">14</h4>
+              <p class="label-1 label-1--gray">Feb</p>
+            </div>
+            <div class="news-card__details">
+              <div class="news-card__user">
+                <img
+                  src="assets/svg/user.svg"
+                  alt="User"
+                  class="news-card__user-icon"
+                />
+                <p class="body-1">Kristina Castle</p>
+              </div>
+              <p class="subtitle-3">
+                Everything You Need to Know About Organic
+              </p>
+              <p class="body-1 body-1--gray">
+                Organic farming is the only way that you still can experience
+                the real world.
+              </p>
+              <button class="btn btn--white-small">
+                <span class="body-2">View More</span>
+                <svg class="btn__icon">
+                  <use href="assets/svg/right-arrow.svg#right-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="news-card news-card-2">
+            <div class="news-card__date">
+              <h4 class="heading-quaternary">24</h4>
+              <p class="label-1 label-1--gray">Sep</p>
+            </div>
+            <div class="news-card__details">
+              <div class="news-card__user">
+                <img
+                  src="assets/svg/user.svg"
+                  alt="User"
+                  class="news-card__user-icon"
+                />
+                <p class="body-1">Alex Louis</p>
+              </div>
+              <p class="subtitle-3">
+                Organic Fruits: Surprising Benefits and Facts
+              </p>
+              <p class="body-1 body-1--gray">
+                The world of nature has grown on the principles of health,
+                ecology, and care.
+              </p>
+              <button class="btn btn--white-small">
+                <span class="body-2">View More</span>
+                <svg class="btn__icon">
+                  <use href="assets/svg/right-arrow.svg#right-arrow"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </section>
     </main>
