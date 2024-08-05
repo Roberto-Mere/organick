@@ -12,10 +12,10 @@
     display: flex;
     list-style: none;
     gap: 4rem;
-    font-size: 2rem;
-    font-weight: 400;
+  }
 
-    & :first-child {
+  &__item {
+    &:first-child {
       color: $color-primary;
     }
   }
@@ -23,8 +23,6 @@
   &__link {
     &:link,
     &:visited {
-      text-decoration: none;
-      color: inherit;
       transition: all 0.2s;
     }
 

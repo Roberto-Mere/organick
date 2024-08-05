@@ -18,6 +18,10 @@ body {
   }
 }
 
+.body-2 {
+  font-size: 2rem;
+}
+
 .body-3 {
   font-size: 2rem;
   font-weight: 700;
@@ -103,4 +107,14 @@ body {
   font-size: 1.6rem;
   font-weight: 700;
   line-height: 2.4rem;
+}
+
+// Links
+
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
 }

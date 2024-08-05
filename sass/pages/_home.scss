@@ -171,3 +171,9 @@
     margin-bottom: 0.4rem;
   }
 }
+
+.offer-cards {
+  @include cardsGridDisplay;
+  background-color: $color-gray-1;
+  padding: 8rem 4rem;
+}
