@@ -127,7 +127,7 @@
     padding: 3.6rem 3.5rem 6.8rem 4.8rem;
     margin: 5.6rem 4rem;
     margin-left: 0;
-    box-shadow: 1.6rem 2.4rem 5.2rem -0.8rem rgba($color-black, 0.15);
+    box-shadow: $shadow;
   }
 
   &__heading {
@@ -152,4 +152,17 @@
 .offer-cards {
   background-color: $color-gray-1;
   padding: 8rem 4rem;
+}
+
+.news {
+  padding: 9.6rem 4rem;
+
+  &__cards {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, 66.5rem);
+    gap: 3.2rem;
+    gap: 3rem;
+    margin-top: 6rem;
+  }
 }
