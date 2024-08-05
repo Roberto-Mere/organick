@@ -12,6 +12,10 @@ body {
 
 .body-1 {
   font-size: 1.8rem;
+
+  &--gray {
+    color: $color-gray-5;
+  }
 }
 
 .body-3 {
@@ -89,6 +93,10 @@ body {
 .label-1 {
   font-size: 1.4rem;
   line-height: 1.6rem;
+
+  &--gray {
+    color: $color-gray-5;
+  }
 }
 
 .label-2 {
