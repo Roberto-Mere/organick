@@ -137,7 +137,7 @@
         <p class="display display--primary">Organic</p>
         <h2 class="heading-secondary">Our Products</h2>
 
-        <div class="products__cards">
+        <div class="products__cards u-cards-grid-display">
           <div class="card">
             <p class="card__label label-2">Vegetable</p>
             <img
@@ -449,23 +449,26 @@
       </section>
 
       <section class="offer-products">
-        <p class="offer-products__display display display--primary">
-          Offer Products
-        </p>
-        <h2
-          class="offer-products__heading heading-secondary heading-secondary--white"
-        >
-          We Offer Organic for You
-        </h2>
+        <div class="u-section-flex-header">
+          <div class="offer-products__title">
+            <p class="offer-products__display display display--primary">
+              Offer Products
+            </p>
+            <h2
+              class="offer-products__heading heading-secondary heading-secondary--white"
+            >
+              We Offer Organic for You
+            </h2>
+          </div>
+          <button class="offer-products__button btn btn--primary">
+            <span class="body-2">View All Products</span>
+            <svg class="btn__icon">
+              <use href="assets/svg/right-arrow.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
 
-        <button class="offer-products__button btn btn--primary">
-          <span class="body-2">View All Products</span>
-          <svg class="btn__icon">
-            <use href="assets/svg/right-arrow.svg#right-arrow"></use>
-          </svg>
-        </button>
-
-        <div class="offer-products__cards">
+        <div class="offer-products__cards u-cards-grid-display">
           <div class="card">
             <p class="card__label label-2">Vegetable</p>
             <img
@@ -637,7 +640,7 @@
         </div>
       </section>
 
-      <section class="offer-cards">
+      <section class="offer-cards u-cards-grid-display">
         <div class="offer-card offer-card-1">
           <a href="#" class="offer-card__link link subtitle-3">Fruit Juice</a>
         </div>
@@ -652,16 +655,21 @@
       </section>
 
       <section class="news">
-        <p class="display display--primary">News</p>
-        <h2 class="news__heading heading-secondary">
-          Discover content about organic products
-        </h2>
-        <button class="btn btn--white">
-          <span class="body-2">More News</span>
-          <svg class="btn__icon">
-            <use href="assets/svg/right-arrow.svg#right-arrow"></use>
-          </svg>
-        </button>
+        <div class="news__header u-section-flex-header">
+          <div class="news__title">
+            <p class="display display--primary">News</p>
+            <h2 class="news__heading heading-secondary">
+              Discover content about organic products
+            </h2>
+          </div>
+          <button class="btn btn--white">
+            <span class="body-2">More News</span>
+            <svg class="btn__icon">
+              <use href="assets/svg/right-arrow.svg#right-arrow"></use>
+            </svg>
+          </button>
+        </div>
+
         <div class="news__cards">
           <div class="news-card news-card-1">
             <div class="news-card__date">
