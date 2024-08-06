@@ -1,4 +1,4 @@
-//Colors
+// Colors
 
 $color-primary: #7eb693;
 $color-secondary: #ffa858;
@@ -12,4 +12,13 @@ $color-gray-4: #b8b8b8;
 $color-gray-5: #525c60;
 $color-light-black: #010101;
 $color-black: #000000;
+
+// Shadow
+
 $shadow: 1.6rem 2.4rem 5.2rem -0.8rem rgba($color-black, 0.15);
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; // 1200px
+$bp-large: 62.5em; // 1000px
+$bp-medium: 50em; // 800px;
+$bp-small: 37.5em; // 600px;
