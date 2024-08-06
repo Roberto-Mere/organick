@@ -48,6 +48,8 @@
     display: none;
   }
 
+  // Large screens breakpoint
+
   @media only screen and (max-width: $bp-large) {
     position: relative;
 
@@ -158,6 +160,47 @@
     &__checkbox:checked + &__button &__icon::after {
       top: 0;
       transform: rotate(-135deg);
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.6rem;
+
+    &__logo {
+      width: 16rem;
+    }
+
+    // Burger icon
+
+    &__icon {
+      &,
+      &::before,
+      &::after {
+        width: 2rem;
+        height: 1px;
+      }
+
+      &::before {
+        top: -0.8rem;
+      }
+      &::after {
+        top: 0.8rem;
+      }
+    }
+
+    // Position items to smaller screen
+
+    &__checkbox:checked ~ &__logo-link {
+      top: 1.6rem;
+    }
+
+    &__checkbox:checked ~ &__button {
+      top: 1.6rem;
+      right: 1.6rem;
+    }
+
+    &__socials {
+      bottom: 1.6rem;
     }
   }
 }
