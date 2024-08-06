@@ -12,6 +12,16 @@
   font-size: 62.5%; //1 rem = 10px
 }
 
+// Links
+
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
 // Lists
 
 .list {
