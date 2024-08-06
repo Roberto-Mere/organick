@@ -1,48 +1,17 @@
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+/* Error: Can't find stylesheet to import.
+ *    ,
+ * 17 | @import "layout/footer";
+ *    |         ^^^^^^^^^^^^^^^
+ *    '
+ *   sass/main.scss 17:9  root stylesheet */
 
-:root {
-  font-size: 62.5%;
+body::before {
+  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
+      "Droid Sans Mono", monospace, monospace;
+  white-space: pre;
+  display: block;
+  padding: 1em;
+  margin-bottom: 1em;
+  border-bottom: 2px solid black;
+  content: "Error: Can't find stylesheet to import.\a    \2577 \a 17 \2502  @import \"layout/footer\";\a    \2502          ^^^^^^^^^^^^^^^\a    \2575 \a   sass/main.scss 17:9  root stylesheet";
 }
-
-body {
-  font-family: Roboto;
-  font-weight: 400;
-  line-height: 1.5;
-  color: #274c5b;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 4.8rem 4rem;
-}
-.header__logo {
-  width: 20rem;
-}
-.header__list {
-  display: flex;
-  list-style: none;
-  gap: 40px;
-  font-size: 2rem;
-  font-weight: 400;
-}
-.header__list :first-child {
-  color: #7eb693;
-}
-.header__link:link, .header__link:visited {
-  text-decoration: none;
-  color: inherit;
-  transition: all 0.2s;
-}
-.header__link:hover, .header__link:focus {
-  border-bottom: 2px solid currentColor;
-}
-
-/*# sourceMappingURL=style.css.map */
