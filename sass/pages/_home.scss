@@ -30,8 +30,14 @@
 
 .offers {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
   margin: 9.6rem 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 6.4rem 1.6rem;
+  }
 }
 
 .about-us {

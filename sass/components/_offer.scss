@@ -1,9 +1,9 @@
 .offer {
   display: flex;
   align-items: center;
-  width: 50%;
   padding: 11rem 0;
   border-radius: 3.2rem;
+  flex: 0 1 66.5rem;
 
   &__text {
     max-width: 26rem;
@@ -18,5 +18,13 @@
   &-2 {
     background-image: url(../assets/img/offer-2.png);
     background-size: cover;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 9.6rem 0;
+
+    &__text {
+      margin-left: 5.6rem;
+    }
   }
 }
