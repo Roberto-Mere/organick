@@ -146,6 +146,18 @@
   &__name {
     margin-bottom: 0.8rem;
   }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 9.6rem 4rem;
+
+    &__image {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6.4rem 1.6rem;
+  }
 }
 
 .offer-products {
