@@ -1,3 +1,5 @@
+// General reset
+
 *,
 *::after,
 *::before {
@@ -8,4 +10,24 @@
 
 :root {
   font-size: 62.5%; //1 rem = 10px
+}
+
+// Links
+
+.link {
+  &:link,
+  &:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+}
+
+.link-img {
+  line-height: 0;
+}
+
+// Lists
+
+.list {
+  list-style: none;
 }

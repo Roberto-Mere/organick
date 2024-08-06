@@ -1,0 +1,102 @@
+.footer {
+  display: grid;
+  column-gap: 3.2rem;
+  row-gap: 6.4rem;
+  grid-template-columns: 25% 1fr 25%;
+  padding: 0 4rem;
+
+  // Left section
+
+  &__left {
+    text-align: end;
+  }
+
+  &__list-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+    margin-top: 4.8rem;
+  }
+
+  // Center section
+
+  &__center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 4.8rem;
+    padding-top: 3.2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      height: 105%;
+      position: absolute;
+      width: 1px;
+      top: 0;
+      left: 0;
+      background-color: $color-gray-3;
+    }
+
+    &::after {
+      content: "";
+      height: 105%;
+      position: absolute;
+      width: 1px;
+      top: 0;
+      right: 0;
+      background-color: $color-gray-3;
+    }
+  }
+
+  &__logo {
+    line-height: normal;
+    width: 20rem;
+    margin-bottom: 4rem;
+  }
+
+  &__social-icons {
+    display: flex;
+    gap: 2.4rem;
+    margin-top: 6.4rem;
+  }
+
+  &__icon {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: $color-gray-1;
+  }
+
+  // Right section
+
+  &__right {
+    text-align: start;
+  }
+
+  &__list-pages {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    margin-top: 4.8rem;
+  }
+
+  // Copyright
+
+  &__copyright {
+    grid-column: 2 / 3;
+    justify-self: center;
+    padding: 1.6rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      width: 100vw;
+      position: absolute;
+      height: 1px;
+      top: 0;
+      left: calc(50% - 50vw);
+      background-color: $color-gray-3;
+    }
+  }
+}
