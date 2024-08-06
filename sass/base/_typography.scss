@@ -12,10 +12,6 @@ body {
 
 .body-1 {
   font-size: 1.8rem;
-
-  &--gray {
-    color: $color-gray-5;
-  }
 }
 
 .body-2 {
@@ -39,20 +35,12 @@ body {
   font-weight: 700;
   font-size: 4.8rem;
   line-height: 5.6rem;
-
-  &--white {
-    color: $color-white;
-  }
 }
 
 .heading-tertiary {
   font-weight: 400;
   font-size: 4rem;
   line-height: 4.8rem;
-
-  &--white {
-    color: $color-white;
-  }
 }
 
 .heading-quaternary {
@@ -67,14 +55,6 @@ body {
   font-size: 3.6rem;
   line-height: 6.4rem;
   text-transform: capitalize;
-
-  &--primary {
-    color: $color-primary;
-  }
-
-  &--white {
-    color: $color-white;
-  }
 }
 
 // Subtitle
@@ -102,10 +82,6 @@ body {
 .label-1 {
   font-size: 1.4rem;
   line-height: 1.6rem;
-
-  &--gray {
-    color: $color-gray-5;
-  }
 }
 
 .label-2 {
@@ -122,4 +98,18 @@ body {
     text-decoration: none;
     color: inherit;
   }
+}
+
+// Color modifiers
+
+.text-gray {
+  color: $color-gray-5;
+}
+
+.text-white {
+  color: $color-white;
+}
+
+.text-primary {
+  color: $color-primary;
 }
