@@ -1,0 +1,19 @@
+@keyframes liftUp {
+  0% {
+    transform: translate(-50%, 200%);
+  }
+
+  100% {
+    transform: translate(-50%, 0);
+  }
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(-200%);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
