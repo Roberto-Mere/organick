@@ -2,7 +2,7 @@
   display: grid;
   column-gap: 3.2rem;
   row-gap: 6.4rem;
-  grid-template-columns: 25% 1fr 25%;
+  grid-template-columns: 22.5% 1fr 22.5%;
   padding: 0 4rem;
 
   // Left section
@@ -65,5 +65,74 @@
     padding: 1.6rem;
     position: relative;
     border-top: 1px solid $color-gray-3;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3.2rem;
+    column-gap: 6.4rem;
+
+    // Left section
+
+    &__left {
+      grid-column: 1 / 2;
+    }
+
+    // Center section
+
+    &__center {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      border: none;
+      padding: 3.2rem;
+    }
+
+    // Right section
+
+    &__right {
+      grid-column: 2 / 3;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: 1fr;
+    gap: 6.4rem;
+    padding: 0 1.6rem;
+
+    // Left section
+
+    &__left {
+      text-align: start;
+    }
+
+    &__list-contact {
+      gap: 1.6rem;
+      margin-top: 2.4rem;
+    }
+
+    // Center section
+
+    &__center {
+      padding: 0;
+    }
+
+    &__logo {
+      margin-bottom: 3.2rem;
+    }
+
+    &__socials {
+      margin-top: 3.2rem;
+    }
+
+    // Right section
+
+    &__right {
+      grid-column: 1 / 2;
+    }
+
+    &__list-pages {
+      gap: 1.6rem;
+      margin-top: 2.4rem;
+    }
   }
 }
