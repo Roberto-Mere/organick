@@ -24,29 +24,21 @@
   &__details {
     display: flex;
     gap: 0.8rem;
+    flex-wrap: wrap;
+    justify-content: start;
   }
 
   &__price {
     &--strike {
       position: relative;
       color: $color-gray-4;
-
-      &::after {
-        content: "";
-        position: absolute;
-        top: calc(50% - 1px);
-        left: 0;
-        height: 1px;
-        width: 100%;
-        border: 0.5px solid $color-gray-4;
-      }
+      text-decoration: line-through;
     }
   }
 
   &__stars {
-    flex: 1;
+    margin-left: auto;
     display: flex;
-    justify-content: end;
     align-items: center;
     gap: 0.4rem;
   }
@@ -54,5 +46,20 @@
   &__icon-star {
     height: 1.6rem;
     width: 1.6rem;
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.6rem;
+
+    &__price {
+      &--strike {
+        margin-right: auto;
+      }
+    }
+
+    &__stars {
+      flex: 0 0 100%;
+      margin-bottom: 0.8rem;
+    }
   }
 }

@@ -3,6 +3,11 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, 43.2rem);
   gap: 3.2rem;
+
+  @media only screen and (max-width: $bp-small) {
+    grid-template-columns: repeat(auto-fit, 36.8rem);
+    gap: 2.4rem;
+  }
 }
 
 .u-section-flex-header {

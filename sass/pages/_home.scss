@@ -16,12 +16,28 @@
   &__heading {
     margin-bottom: 3.6rem;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 1.6rem;
+    background-position: 25%;
+
+    &__content {
+      max-width: 30rem;
+      margin: 0;
+    }
+  }
 }
 
 .offers {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   gap: 3rem;
   margin: 9.6rem 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    margin: 6.4rem 1.6rem;
+  }
 }
 
 .about-us {
@@ -43,6 +59,36 @@
   &__features {
     margin: 5.6rem 0;
   }
+
+  @media only screen and (max-width: $bp-large) {
+    flex-direction: column;
+
+    &__image {
+      width: 60%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__image {
+      width: 75%;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6.4rem 1.6rem;
+
+    &__image {
+      width: 100%;
+    }
+
+    &__heading {
+      margin-bottom: 1.6rem;
+    }
+
+    &__features {
+      margin: 3.2rem 0;
+    }
+  }
 }
 
 .products {
@@ -50,6 +96,10 @@
   flex-direction: column;
   align-items: center;
   padding: 9.6rem 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6.4rem 1.6rem;
+  }
 
   &__cards {
     width: 100%;
@@ -60,6 +110,7 @@
 .testimonials {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   background-color: $color-gray-0;
   text-align: center;
 
@@ -96,6 +147,18 @@
   &__name {
     margin-bottom: 0.8rem;
   }
+
+  @media only screen and (max-width: $bp-large) {
+    padding: 9.6rem 4rem;
+
+    &__image {
+      display: none;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6.4rem 1.6rem;
+  }
 }
 
 .offer-products {
@@ -104,6 +167,14 @@
 
   &__cards {
     margin-top: 4.8rem;
+  }
+
+  &__title {
+    margin-right: 4.8rem;
+  }
+
+  &__button {
+    margin-top: 2.4rem;
   }
 }
 
@@ -143,6 +214,38 @@
   &__subtitle {
     margin-bottom: 0.4rem;
   }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__image {
+      grid-column: img-start / content-end;
+    }
+
+    &__content {
+      grid-column: img-start / content-end;
+      grid-row: 2 / 3;
+      margin: -6.4rem 1.6rem 0 1.6rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    &__heading {
+      margin-bottom: 3.2rem;
+    }
+
+    &__content {
+      padding: 3.2rem;
+    }
+
+    &__item {
+      &:not(:last-child) {
+        margin-bottom: 2.4rem;
+      }
+    }
+
+    &__subtitle {
+      margin-bottom: 0.8rem;
+    }
+  }
 }
 
 .offer-cards {
@@ -157,9 +260,38 @@
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(auto-fit, 66.5rem);
-    gap: 3.2rem;
     gap: 3rem;
     margin-top: 6rem;
+  }
+
+  &__title {
+    margin-right: 4.8rem;
+  }
+
+  &__button {
+    margin-top: 2.4rem;
+  }
+
+  @media only screen and (max-width: $bp-large) {
+    &__cards {
+      gap: 6.4rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    &__cards {
+      grid-template-columns: repeat(auto-fit, 43.2rem);
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6.4rem 1.6rem;
+
+    &__cards {
+      grid-template-columns: repeat(auto-fit, 36.8rem);
+      gap: 3.2rem;
+      margin-top: 3.2rem;
+    }
   }
 }
 
@@ -167,6 +299,7 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  row-gap: 3.2rem;
   background-image: url(../assets/img/newsletter.png);
   background-size: cover;
   padding: 10.4rem 6.4rem;
@@ -174,7 +307,7 @@
   margin: 0 4rem 9.6rem 4rem;
 
   &__heading {
-    flex: 0 0 42%;
+    flex: 0 0 37%;
     margin-right: 8.6rem;
   }
 
@@ -192,5 +325,20 @@
     border: none;
     line-height: inherit;
     letter-spacing: inherit;
+  }
+
+  @media only screen and (max-width: $bp-medium) {
+    background-position: 30%;
+    padding: 6.4rem;
+
+    &__heading {
+      flex: 0 0 100%;
+      margin-right: 8.6rem;
+    }
+  }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 3.2rem;
+    margin: 0 1.6rem 6.4rem 1.6rem;
   }
 }

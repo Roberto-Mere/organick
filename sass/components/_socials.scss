@@ -1,0 +1,10 @@
+.socials {
+  display: flex;
+  gap: 2.4rem;
+
+  &__icon {
+    padding: 2rem;
+    border-radius: 50%;
+    background-color: $color-gray-1;
+  }
+}

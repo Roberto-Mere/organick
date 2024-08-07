@@ -13,13 +13,21 @@
 
   <body>
     <header class="header">
-      <a href="#" class="link-img"
+      <input type="checkbox" class="header__checkbox" id="navigation-toggle" />
+      <label for="navigation-toggle" class="header__button">
+        <span class="header__icon">&nbsp;</span>
+      </label>
+
+      <a href="#" class="link-img header__logo-link"
         ><img
           src="assets/svg/logo.svg"
           alt="Organick logo"
           class="header__logo"
         />
       </a>
+
+      <div class="header__navigation-bg">&nbsp;</div>
+
       <nav class="header__menu">
         <ul class="header__list list">
           <li class="header__item">
@@ -39,6 +47,21 @@
           </li>
         </ul>
       </nav>
+
+      <div class="header__socials socials">
+        <a href="#" class="link-img socials__icon">
+          <img src="assets/svg/facebook.svg" alt="Facebook" />
+        </a>
+        <a href="#" class="link-img socials__icon">
+          <img src="assets/svg/twitter.svg" alt="Twitter" />
+        </a>
+        <a href="#" class="link-img socials__icon">
+          <img src="assets/svg/instagram.svg" alt="Instagram" />
+        </a>
+        <a href="#" class="link-img socials__icon">
+          <img src="assets/svg/pinterest.svg" alt="Pinterest" />
+        </a>
+      </div>
     </header>
 
     <section class="hero">
@@ -394,7 +417,7 @@
         <img
           src="assets/img/testimonial-left.png"
           alt="Cut lemons, cinnamon sticks and dandelions"
-          class="testimonials__image-left"
+          class="testimonials__image"
         />
         <div class="testimonials__content">
           <p class="display text-primary">Testimonial</p>
@@ -442,7 +465,7 @@
         <img
           src="assets/img/testimonial-right.png"
           alt="Cut lemons, cinnamon sticks and dandelions"
-          class="testimonials__image-right"
+          class="testimonials__image"
         />
       </section>
 
@@ -658,7 +681,7 @@
               Discover content about organic products
             </h2>
           </div>
-          <button class="btn btn--white">
+          <button class="news__button btn btn--white">
             <span class="body-2">More News</span>
             <svg class="btn__icon">
               <use href="assets/svg/right-arrow.svg#right-arrow"></use>
@@ -780,17 +803,17 @@
           We are a popular and farming company aspiring to be a leader in the
           Organic food industry.
         </p>
-        <div class="footer__social-icons">
-          <a href="#" class="link-img footer__icon">
+        <div class="footer__socials socials">
+          <a href="#" class="link-img socials__icon">
             <img src="assets/svg/facebook.svg" alt="Facebook" />
           </a>
-          <a href="#" class="link-img footer__icon">
+          <a href="#" class="link-img socials__icon">
             <img src="assets/svg/twitter.svg" alt="Twitter" />
           </a>
-          <a href="#" class="link-img footer__icon">
+          <a href="#" class="link-img socials__icon">
             <img src="assets/svg/instagram.svg" alt="Instagram" />
           </a>
-          <a href="#" class="link-img footer__icon">
+          <a href="#" class="link-img socials__icon">
             <img src="assets/svg/pinterest.svg" alt="Pinterest" />
           </a>
         </div>
