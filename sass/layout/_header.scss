@@ -23,6 +23,7 @@
     order: 1;
   }
 
+  &__navigation-bg,
   &__menu,
   &__button {
     order: 2;
@@ -36,6 +37,7 @@
 
     &:hover,
     &:focus {
+      outline: none;
       border-bottom: 2px solid currentColor;
     }
   }
@@ -43,7 +45,6 @@
   // Hide burger menu items on bigger screens
 
   &__socials,
-  &__navigation-bg,
   &__button,
   &__checkbox {
     display: none;
@@ -72,7 +73,6 @@
       position: absolute;
       bottom: 4.8rem;
       left: 50%;
-      transform: translateX(-50%);
     }
 
     &__button {
@@ -85,13 +85,17 @@
     }
 
     &__navigation-bg {
-      height: 100vh;
-      width: 100vw;
+      height: 4.8rem;
+      width: 4.8rem;
+      border-radius: 50%;
       position: fixed;
       top: 0;
-      left: 0;
+      right: 0;
+      transform: translate(50%, -50%);
       background-color: $color-white;
       z-index: 4;
+      transition: 0.3s width, 0.3s height ease-out;
+      opacity: 0;
     }
 
     // Burger icon
@@ -105,6 +109,7 @@
         width: 3.6rem;
         height: 1.5px;
         background-color: $color-body;
+        transition: 0.2s transform ease-out;
       }
 
       &::before,
@@ -125,7 +130,6 @@
     // Burger menu items appear and are positioned to remain fixed
 
     &__checkbox:checked ~ &__menu,
-    &__checkbox:checked ~ &__navigation-bg,
     &__checkbox:checked ~ &__logo-link {
       display: block;
       position: fixed;
@@ -145,6 +149,21 @@
     &__checkbox:checked ~ &__button {
       top: 4.8rem;
       right: 4rem;
+    }
+
+    &__checkbox:checked ~ &__menu {
+      animation: 0.25s moveLeft ease-out 0.3s backwards;
+    }
+
+    &__checkbox:checked ~ &__socials {
+      animation: 0.25s liftUp ease-out 0.3s backwards;
+      transform: translate(-50%, 0);
+    }
+
+    &__checkbox:checked ~ &__navigation-bg {
+      height: 300vh;
+      width: 300vw;
+      opacity: 1;
     }
 
     // Transform burger icon to x icon
