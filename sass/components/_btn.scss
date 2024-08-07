@@ -6,6 +6,7 @@
   line-height: inherit;
   letter-spacing: inherit;
   cursor: pointer;
+  transition: 0.25s all ease-in-out;
 
   &__icon {
     width: 3.5rem;
@@ -37,6 +38,17 @@
     .btn__icon {
       margin-left: 1.2rem;
     }
+  }
+
+  &:hover,
+  &:focus {
+    transform: translateY(-3px);
+    box-shadow: $shadow-btn;
+  }
+
+  &:active {
+    transform: translateY(0);
+    box-shadow: none;
   }
 
   @media only screen and (max-width: $bp-small) {
