@@ -170,6 +170,10 @@
   &__button {
     margin-top: 2.4rem;
   }
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6.4rem 1.6rem;
+  }
 }
 
 .eco-friendly {
@@ -245,6 +249,10 @@
 .offer-cards {
   background-color: $color-gray-1;
   padding: 8rem 4rem;
+
+  @media only screen and (max-width: $bp-small) {
+    padding: 6.4rem 1.6rem;
+  }
 }
 
 .news {
