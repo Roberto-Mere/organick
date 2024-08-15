@@ -33,6 +33,7 @@
       position: relative;
       color: $color-gray-4;
       text-decoration: line-through;
+      margin-right: auto;
     }
   }
 
@@ -46,20 +47,5 @@
   &__icon-star {
     height: 1.6rem;
     width: 1.6rem;
-  }
-
-  @media only screen and (max-width: $bp-small) {
-    padding: 1.6rem;
-
-    &__price {
-      &--strike {
-        margin-right: auto;
-      }
-    }
-
-    &__stars {
-      flex: 0 0 100%;
-      margin-bottom: 0.8rem;
-    }
   }
 }
