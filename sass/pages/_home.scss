@@ -261,7 +261,9 @@
   &__cards {
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fit, 66.5rem);
+    grid-template-columns: repeat(auto-fit, minmax(54.5rem, 1fr));
+    justify-items: center;
+
     gap: 3rem;
     margin-top: 6rem;
   }
@@ -274,25 +276,11 @@
     margin-top: 2.4rem;
   }
 
-  @media only screen and (max-width: $bp-large) {
-    &__cards {
-      gap: 6.4rem;
-    }
-  }
-
-  @media only screen and (max-width: $bp-medium) {
-    &__cards {
-      grid-template-columns: repeat(auto-fit, 43.2rem);
-    }
-  }
-
   @media only screen and (max-width: $bp-small) {
     padding: 6.4rem 1.6rem;
 
     &__cards {
-      grid-template-columns: repeat(auto-fit, 36.8rem);
-      gap: 3.2rem;
-      margin-top: 3.2rem;
+      grid-template-columns: repeat(auto-fit, minmax(36rem, 1fr));
     }
   }
 }
