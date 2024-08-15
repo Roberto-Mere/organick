@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: end;
-  min-height: 58.4rem;
+  height: 60vh;
   border-radius: 2.4rem;
   position: relative;
 
@@ -22,7 +22,7 @@
   }
 
   &__link {
-    min-width: 32rem;
+    width: 100%;
     padding: 3.2rem 4rem;
     border-radius: 2.4rem;
     margin: 5.6rem;
